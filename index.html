@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compasso Musical - Loja de instrumentos Musicais</title>
     <style> 
-    
+     .botaoPrincipal {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+     }
     * {
         margin: 0;
         padding: 0;
@@ -63,6 +71,32 @@
     .linknav:hover {
     color: #d32f2f;
     }
+
+    .container {
+        padding: 4rem 5%;
+    }
+
+    .tituloSecao {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .gradeProdutos {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap ;
+    }
+    .cartaoProduto {
+        background-color: #ffffffff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        width: 300px;
+        box-shadow: 0.8px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+
+    }
     </style>
 </head>
 <body>
@@ -106,32 +140,34 @@ alt="Imagem com mãos segurando instrumentos."
 width="600"
 >
 <br><br>
-<a href="#">Ver nossas ofertas.</a>
+<a href="#" class="botaoPrincipal">Ver nossas ofertas.</a>
 </section>
 
-<!--Seção Store-->
-<section id="sobre">
-    <h2>Sobre a compasso músical</h2>
-    <p>
-        Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora tanto para quem está aprendendo os primeiros acordes quanto para músicos profissionais.
-    </p>
-    <ul>
-        <li> Todos os instrumentos são revisados por nossa equipe técinica.</li>
-        <li> Garantia estendida de fábrica</li>
-        <li>Suporte e atendimento feito por músicos reais.</li>
-    </ul>
+<!--Seção Sobre-->
+<section id="sobre" class="container">
+    <h2 class="tituloSecao">Sobre a compasso músical</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p>
+            Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora tanto para quem está aprendendo os primeiros acordes quanto para músicos profissionais.
+        </p>
+        <ul style="text-align: left; display: inline-block; margin-top: 1rem;">
+            <li style="margin-bottom: 0.5rem;" > Todos os instrumentos são revisados por nossa equipe técinica.</li>
+            <li style="margin-bottom: 0.5rem;" > Garantia estendida de fábrica</li>
+            <li style="margin-bottom: 0.5rem;" >Suporte e atendimento feito por músicos reais.</li>
+        </ul>
+    </div>
 </section>
 
 <!--Produtos-->
-<section id="produtos">
-    <h2> Catálogo de Instrumentos</h2>
-
-    <article>
-        <h3>Guitarra Elétrica Stratocaster</h3>
+<section id="produtos" class="container" style=" background-color: #eeeeee;">
+    <h2 class="tituloSecao"> Catálogo de Instrumentos</h2>
+    <div class="gradeProdutos">
+    <article class="cartaoProduto">
+        <h3 class="nomeProduto">Guitarra Elétrica Stratocaster</h3>
         <img 
         src="https://images.unsplash.com/photo-1627958766757-4837f24b5b74" 
         alt="Guitarra Elétrica Stratocaster"
-        width="400"
+        width="250"
     >
     <p>
         <strong>Marca: </strong>Fender
@@ -155,6 +191,7 @@ width="600"
     <p><em>Preço: R$ 5.500,00 </em></p>
     <a href="#">Adicionar ao carrinho.</a>
     </article>
+    </div>
 </section>
 
 <!--Seção Depoimentos-->
